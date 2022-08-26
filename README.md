@@ -12,18 +12,18 @@
 | Mai Xuân Tú        | 18521581 |
 
 ## Mục lục
-1. Mô tả đồ án
-2. Dataset
-    - UIT-VSMEC
-    - UIT-VSFC
-    - UIT-ViCTSD
-3. Các phương pháp
+1. [Mô tả đồ án](#1-mô-tả-đồ-án)
+2. [Dataset](#2-dataset)
+    - [UIT-VSMEC](#uit-vsmec)
+    - [UIT-VSFC](#uit-vsfc)
+    - [UIT-ViCTSD](#uit-victsd)
+3. [Các phương pháp](#3-các-phương-pháp)
     - Logistic Regression
     - CNN-LSTM
     - PhoBert
     - Bert4News
     - XLM-R
-4. Kết quả và đánh giá trên các dataset
+4. [Kết quả và đánh giá trên các dataset](#4-kết-quả-và-đánh-giá-trên-các-dataset)
     - UIT-VSMEC
     - UIT-VSFC
     - UIT-ViCTSD
@@ -104,7 +104,7 @@
   - [XLM-R](https://arxiv.org/abs/1911.02116)
   
 ## 4. Kết quả và đánh giá trên các dataset
-- **UIT-VSMEC**
+### **UIT-VSMEC**
   
   ![Bảng so sánh các độ đo giữa các phương pháp có trong bài báo và các phương pháp chạy thực nghiệm trên bộ dữ liệu UIT-VSMEC](https://user-images.githubusercontent.com/66638129/186856122-0b948cba-c44e-4559-a747-b427b528f49b.png)
   -	Ở đây, 6 phương pháp đầu là có trong bài báo, 5 phương pháp sau là chúng tôi chạy thực nghiệm.
@@ -112,7 +112,7 @@
   -	Trong khi đó, phương pháp XLM-R cho độ chính xác cao nhất với 64.94%. Vì đây là phương pháp mới (SOTA) nên nó đủ độ phức tạp để xử lý bài toán này.
   -	Trong số 6 phương pháp được thực nghiệm trong bài báo, phương pháp CNN+word2Vec có độ chính xác cao nhất với accuracy và F1 cùng bằng 59.74% trong khi phương pháp XLM-R của chúng tôi đạt độ chính xác cao nhất là 64.94% đối với accuracy và 62.04% trên F1. Độ chính xác cải thiện 5.20% đối với accuracy và 2.30% đối với F1.
 
-- **UIT-VSFC**
+### **UIT-VSFC**
 
   ![Bảng so sánh các độ đo giữa các phương pháp có trong bài báo và các phương pháp chạy thực nghiệm trên bộ dữ liệu UIT-VSFC](https://user-images.githubusercontent.com/66638129/186857263-676dc6cb-c80c-4cf0-9f1c-e6dd5e8d6f85.png)
   - Đối với nhãn *Sentiment*:
@@ -122,7 +122,7 @@
     -	F1 của 3 phương pháp CNN-LSTM, PhoBert, Bert4News không có sự chênh lệch nhiều. Tuy nhiên, phương pháp XLM-R có F1 cao nhất với 88.00% và phương pháp Logistic Regression có F1 thấp nhất với 68.00%.
     -	Trong số 4 phương pháp được thực nghiệm trong bài báo, phương pháp Bi-LSTM+Word2Vec có độ chính xác cao nhất với F1 đạt 89.60% trong khi phương pháp XLM-R của chúng tôi đạt độ chính xác cao nhất với F1 là 88.00%. Độ chính xác giảm 1.60% đối với F1.
 
-- **UIT-ViCTSD**
+### **UIT-ViCTSD**
 
   ![Bảng so sánh các độ đo giữa các phương pháp có trong bài báo và các phương pháp chạy thực nghiệm trên bộ dữ liệu UIT-ViCTSD](https://user-images.githubusercontent.com/66638129/186857620-bc3ff624-76bb-42fc-afdb-6bff02ef4f6b.png)
   - Đối với nhãn *Constructiveness*:
