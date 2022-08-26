@@ -24,9 +24,9 @@
     - Bert4News
     - XLM-R
 4. [Kết quả và đánh giá trên các dataset](#4-kết-quả-và-đánh-giá-trên-các-dataset)
-    - UIT-VSMEC
-    - UIT-VSFC
-    - UIT-ViCTSD
+    - [UIT-VSMEC](#uit-vsmec-1)
+    - [UIT-VSFC](uit-vsfc-1)
+    - [UIT-ViCTSD](#uit-victsd-1)
   
 ## 1. Mô tả đồ án
 - Nhóm thực hiện phân tích trên ba bộ dữ liệu tiếng Việt, gồm: UIT-VSMEC, UIT-VSFC và UIT-ViCTSD.
