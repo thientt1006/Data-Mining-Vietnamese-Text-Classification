@@ -36,7 +36,7 @@
 - Kết quả này được ứng dụng vào việc Xây dựng một ứng dụng phân loại văn bản trên tiếng Việt.
 
 ## 2. Dataset
-### **UIT-VSMEC**:
+### **a. UIT-VSMEC**:
 - **Đường dẫn bài báo**: https://arxiv.org/abs/1911.09339
 - **Mô tả**: Bộ ngữ liệu là dữ liệu bình luận của người dùng trên mạng xã hội đã được thu thập và gán nhãn. Trong bộ ngữ liệu này, biến phân loại là Emotion với miền giá trị là 1 trong số 7 giá trị sau: ‘Other’, ‘Disgust’, ‘Enjoyment’, ‘Anger’, ‘Surprise’, ‘Sadness’, ‘Fear’.
 - **Kích thước**:
@@ -52,7 +52,7 @@
     
     ![Phân bố tập giá trị nhãn biến Emotion của bộ ngữ liệu UIT-VSMEC](https://user-images.githubusercontent.com/66638129/186841998-5538105c-7d8d-447a-ac8a-16ee26d2a87d.png)
 
-### **UIT-VSFC**: 
+### **b. UIT-VSFC**: 
 - **Đường dẫn bài báo**: https://www.academia.edu/40956009/UIT-VSFC_Vietnamese_Students_Feedback_Corpus_for_Sentiment_Analysis
 - **Mô tả**: Bộ ngữ liệu là dữ liệu đánh giá sau môn học của sinh viên với 2 biến phân loại là Sentiments và Topic với miền giá trị lần lượt là {0, 1, 2} cho Sentiments và {0, 1, 2, 3} cho Topic.
 - **Kích thước**:
@@ -63,18 +63,18 @@
     
   ![Dữ liệu mẫu cho bộ ngữ liệu UIT-VSFC](https://user-images.githubusercontent.com/66638129/186842813-75709ebe-071f-4c80-8fc5-b102f510c4a2.png)
 - Sau khi phân tích dataset và rút ra được một số nhận xét:
-  - Đối với biến *Sentiments*:
+  - Đối với biến ***Sentiments***:
     - Phân bố giá trị nhãn của biến Sentiments không đồng đều và có số lượng chênh lệch cao giữa các nhãn.
     - Ở tập Train, nhãn có số lượng thấp nhất là 458 (‘1’) trong khi nhãn nhiều nhất là 5643 (‘2’).
       
       ![Phân bố tập giá trị nhãn biến Sentiments của bộ ngữ liệu UIT-VSFC](https://user-images.githubusercontent.com/66638129/186843048-6c33c69e-fa00-4526-8b36-9a92fae84d1b.png)
-  - Đối với biến *Topic*:
+  - Đối với biến ***Topic***:
     - Phân bố giá trị nhãn của biến Topic không đồng đều và có số lượng chênh lệch cao giữa các nhãn.
     - Ở tập Train, nhãn có số lượng thấp nhất là 497 (‘2’) trong khi nhãn nhiều nhất là 8166 (‘0’).
       
       ![Phân bố tập giá trị nhãn biến Topic của bộ ngữ liệu UIT-VSFC](https://user-images.githubusercontent.com/66638129/186843210-431a91c8-fa10-4944-9e8c-ad7b4dd99523.png)
    
-### **UIT-ViCTSD**:
+### **c. UIT-ViCTSD**:
 - **Đường dẫn bài báo**: https://arxiv.org/abs/2103.10069
 - **Mô tả**: Bộ ngữ liệu là dữ liệu bình luận của người dùng cho 1 bài viết theo từng chủ đề cụ thể. Bộ ngữ liệu này bao gồm 2 biến phân loại là Constructiveness và Toxicity với cùng miền giá trị là {0, 1}.
 - **Kích thước**:
@@ -85,12 +85,12 @@
   
   ![Dữ liệu mẫu cho bộ ngữ liệu UIT-ViCTSD](https://user-images.githubusercontent.com/66638129/186844801-57144641-6070-4d3e-b1be-772f2a221b91.png)
 - Sau khi phân tích dataset và rút ra được một số nhận xét:
-  - Đối với biến *Sentiments*:
+  - Đối với biến ***Sentiments***:
     - Phân bố giá trị nhãn của biến Constructiveness không đồng đều và có số lượng chênh lệch khá cao giữa các nhãn.
     - Ở tập Train, nhãn có số lượng thấp nhất là 2503 (‘1’) trong khi nhãn nhiều nhất là 4497 (‘0’). Tuy nhiên, xét về phân bố thì biến Constructiveness vẫn cân bằng hơn so với biến Toxicity.
       
       ![Phân bố tập giá trị nhãn biến Constructiveness của bộ ngữ liệu UIT-ViCTSD](https://user-images.githubusercontent.com/66638129/186845018-2252d1b3-03b0-4396-b9ac-552c0d9f5043.png)
-  - Đối với biến *Toxicity*:
+  - Đối với biến ***Toxicity***:
     - Phân bố giá trị nhãn của biến Toxicity không đồng đều và có số lượng chênh lệch rất cao giữa các nhãn.
     - Ở tập Train, nhãn có số lượng thấp nhất là 759 (‘1’) trong khi nhãn nhiều nhất là 6241 (‘0’).
      
@@ -104,7 +104,7 @@
   - [XLM-R](https://arxiv.org/abs/1911.02116)
   
 ## 4. Kết quả và đánh giá trên các dataset
-### **UIT-VSMEC**
+### **a. UIT-VSMEC**
   
   ![Bảng so sánh các độ đo giữa các phương pháp có trong bài báo và các phương pháp chạy thực nghiệm trên bộ dữ liệu UIT-VSMEC](https://user-images.githubusercontent.com/66638129/186856122-0b948cba-c44e-4559-a747-b427b528f49b.png)
   -	Ở đây, 6 phương pháp đầu là có trong bài báo, 5 phương pháp sau là chúng tôi chạy thực nghiệm.
@@ -112,7 +112,7 @@
   -	Trong khi đó, phương pháp XLM-R cho độ chính xác cao nhất với 64.94%. Vì đây là phương pháp mới (SOTA) nên nó đủ độ phức tạp để xử lý bài toán này.
   -	Trong số 6 phương pháp được thực nghiệm trong bài báo, phương pháp CNN+word2Vec có độ chính xác cao nhất với accuracy và F1 cùng bằng 59.74% trong khi phương pháp XLM-R của chúng tôi đạt độ chính xác cao nhất là 64.94% đối với accuracy và 62.04% trên F1. Độ chính xác cải thiện 5.20% đối với accuracy và 2.30% đối với F1.
 
-### **UIT-VSFC**
+### **b. UIT-VSFC**
 
   ![Bảng so sánh các độ đo giữa các phương pháp có trong bài báo và các phương pháp chạy thực nghiệm trên bộ dữ liệu UIT-VSFC](https://user-images.githubusercontent.com/66638129/186857263-676dc6cb-c80c-4cf0-9f1c-e6dd5e8d6f85.png)
   - Đối với nhãn ***Sentiment***:
@@ -122,7 +122,7 @@
     -	F1 của 3 phương pháp CNN-LSTM, PhoBert, Bert4News không có sự chênh lệch nhiều. Tuy nhiên, phương pháp XLM-R có F1 cao nhất với 88.00% và phương pháp Logistic Regression có F1 thấp nhất với 68.00%.
     -	Trong số 4 phương pháp được thực nghiệm trong bài báo, phương pháp Bi-LSTM+Word2Vec có độ chính xác cao nhất với F1 đạt 89.60% trong khi phương pháp XLM-R của chúng tôi đạt độ chính xác cao nhất với F1 là 88.00%. Độ chính xác giảm 1.60% đối với F1.
 
-### **UIT-ViCTSD**
+### **c. UIT-ViCTSD**
 
   ![Bảng so sánh các độ đo giữa các phương pháp có trong bài báo và các phương pháp chạy thực nghiệm trên bộ dữ liệu UIT-ViCTSD](https://user-images.githubusercontent.com/66638129/186857620-bc3ff624-76bb-42fc-afdb-6bff02ef4f6b.png)
   - Đối với nhãn ***Constructiveness***:
