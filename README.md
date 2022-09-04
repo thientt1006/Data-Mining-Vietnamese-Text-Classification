@@ -3,7 +3,7 @@
 - Khai thác dữ liệu truyền thông xã hội - IE403.L21
 - GV: Nguyễn Văn Kiệt
 ## Nhóm sinh viên thực hiện
-| Họ và tên          | MSSV |
+| Họ và tên          | MSSV     |
 | -------------------|:--------:|
 | Trương Thanh Thiên | 18521431 |
 | Võ Trung Hiếu      | 18520758 |
