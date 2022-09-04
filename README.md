@@ -115,21 +115,21 @@
 ### **UIT-VSFC**
 
   ![Bảng so sánh các độ đo giữa các phương pháp có trong bài báo và các phương pháp chạy thực nghiệm trên bộ dữ liệu UIT-VSFC](https://user-images.githubusercontent.com/66638129/186857263-676dc6cb-c80c-4cf0-9f1c-e6dd5e8d6f85.png)
-  - Đối với nhãn *Sentiment*:
+  - Đối với nhãn ***Sentiment***:
     -	F1 của các phương pháp SOTA không có sự chênh lệch nhiều. Tuy nhiên, phương pháp Logistic Regression và CNN-LSTM có F1 thấp hơn các phương pháp còn lại.
     -	Trong số 4 phương pháp được thực nghiệm trong bài báo, phương pháp Bi-LSTM+Word2Vec có độ chính xác cao nhất với F1 đạt 92.00% trong khi phương pháp PhoBert của chúng tôi đạt độ chính xác cao nhất với F1 là 82.00%. Độ chính xác giảm 10.00% đối với F1.
-  - Đối với nhãn *Topic*:
+  - Đối với nhãn ***Topic***:
     -	F1 của 3 phương pháp CNN-LSTM, PhoBert, Bert4News không có sự chênh lệch nhiều. Tuy nhiên, phương pháp XLM-R có F1 cao nhất với 88.00% và phương pháp Logistic Regression có F1 thấp nhất với 68.00%.
     -	Trong số 4 phương pháp được thực nghiệm trong bài báo, phương pháp Bi-LSTM+Word2Vec có độ chính xác cao nhất với F1 đạt 89.60% trong khi phương pháp XLM-R của chúng tôi đạt độ chính xác cao nhất với F1 là 88.00%. Độ chính xác giảm 1.60% đối với F1.
 
 ### **UIT-ViCTSD**
 
   ![Bảng so sánh các độ đo giữa các phương pháp có trong bài báo và các phương pháp chạy thực nghiệm trên bộ dữ liệu UIT-ViCTSD](https://user-images.githubusercontent.com/66638129/186857620-bc3ff624-76bb-42fc-afdb-6bff02ef4f6b.png)
-  - Đối với nhãn *Constructiveness*:
+  - Đối với nhãn ***Constructiveness***:
     - Độ chính xác của các phương pháp SOTA thấp hơn so với phương pháp Logistic Regression và CNN-LSTM.
     -	Trong số 8 phương pháp được thực nghiệm trong bài báo, phương pháp LSTM+fastText có độ chính xác cao nhất với accuracy là 80.00% trong khi phương pháp CNN-LSTM của chúng tôi đạt độ chính xác cao nhất là 80.60% đối với accuracy. Độ chính xác cải thiện 0.60% đối với accuracy.
     -	Phương pháp Our system có độ chính xác cao nhất với F1 là 78.59% trong khi phương pháp CNN-LSTM của chúng tôi đạt độ chính xác cao nhất là 79.46% đối với F1. Độ chính xác cải thiện 0.87% đối với F1.
-  - Đối với nhãn *Toxicity*:
+  - Đối với nhãn ***Toxicity***:
     -	Độ chính xác của các phương pháp hầu như không có sự chênh lệch nhiều.
     -	Trong số 8 phương pháp được thực nghiệm trong bài báo, phương pháp Logistic Regression có độ chính xác cao nhất với accuracy là 90.27% trong khi phương pháp CNN-LSTM của chúng tôi đạt độ chính xác cao nhất là 91.00% đối với accuracy. Độ chính xác cải thiện 0.73% đối với accuracy.
     -	Phương pháp Random Forest có độ chính xác cao nhất với F1 là 90.03% trong khi phương pháp PhoBert của chúng tôi đạt độ chính xác cao nhất là 72.92% đối với F1. Độ chính xác giảm 17.11% đối với F1.
